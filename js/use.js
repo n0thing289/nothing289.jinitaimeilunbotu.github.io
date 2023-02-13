@@ -102,7 +102,7 @@ window.addEventListener('load',function(){
             circlechange()
         }
 
-        audio.play();
+        // audio.play();
 
         
     })
