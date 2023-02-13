@@ -106,9 +106,41 @@
         .current{
             background-color: red;
         }
+
+        /*  */
+        *{
+            padding:0;
+            margin:0;
+        }
+        video{
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height:100%;
+            /* ?? */
+            object-fit: cover;
+        }
+        .overlay{
+            /* 给背景视频来点蒙版 */
+            position: absolute;
+            top: 0;
+            left: 0;
+            width: 100%;
+            height: 100%;
+            background-color: darkkhaki;
+            /* ?? */
+            mix-blend-mode: overlay;
+            object-fit: cover;
+        }
+        /*  */
     </style>
 </head>
 <body>
+    <div>
+        <video src="night.mp4" autoplay loop muted></video>
+        <!-- <div class="overlay"></div> -->
+    </div>
     <div class="lunbo">
         <!-- zuo左按钮-->
         <a href="javascript:;"class="aleft">👈</a>
